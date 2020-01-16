@@ -35,4 +35,24 @@ def refresh_screen():
     #display board to player 
     board.display()
 
+while True: 
+    # start by refreshing terminal 
+    refresh_screen()
+
+    # Player X input 
+    x = int(input("Player X: Choose cell 1 - 9 >"))
+
+    board.update_cell(x, "X")
+
+    refresh_screen()
+
+    # Player O input
+    o = int(input("Player O: Choose cell 1 - 9 >"))
+
+    board.update_cell(o, "O")
+
+    refresh_screen()
+
+
+
 
